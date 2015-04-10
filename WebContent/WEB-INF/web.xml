@@ -1,0 +1,35 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+
+	<display-name>RESTful Web App</display-name>
+
+	<servlet>
+		<servlet-name>jersey-helloworld-serlvet</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.trimc.blogger.samplewebapp</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>jersey-helloworld-serlvet</servlet-name>
+		<url-pattern>/blog/*</url-pattern>
+	</servlet-mapping>
+	
+	
+	<filter>
+		<filter-name>cors</filter-name>
+		<filter-class>com.trimc.blogger.samplewebapp.CorsFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>cors</filter-name>
+		<url-pattern>/blog/*</url-pattern>
+	</filter-mapping>
+	
+
+</web-app>  
