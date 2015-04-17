@@ -2,13 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.trimc.blogger.samplewebapp</groupId>
-	<artifactId>trimc-samplewebapp</artifactId>
+	<groupId>com.trimc.blogger.jaxrs.minimalist</groupId>
+	<artifactId>jaxrs-minimalist</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
 
 	<url />
-	<name>Test Runtime</name>
+	<name>JAX-RS Sample Webapp</name>
 	<inceptionYear>2015</inceptionYear>
 	<description>Test JSON Deployment</description>
 
